@@ -32,6 +32,8 @@ Here's the specification:
     * When the server returns a failure status
       * Use `document.write` to write `sadness` to the screen (DOM
         Manipulating)
+* If the status is already liked, clicking the "full heart" again will submit a
+  web request and toggle the DOM back to the "unliked" status.
 
 To force `mimicServerCall` to fail, set `forceFail` in the
 `configurationObject` to be `true`.
