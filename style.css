@@ -3,6 +3,10 @@ body {
   background-color: rgb(29,161,242);
 }
 
+.like {
+  cursor: pointer;
+}
+
 body h1 {
   color: #FFF;
 }
@@ -33,4 +37,30 @@ article.media-post > footer {
 
 article.media-post > footer ul {
   list-style-type: none;
+}
+
+#modal {
+  border-radius: 10px;
+  background-color: maroon;
+  color: white;
+
+  margin: 1em;
+  padding: 1em;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#modal p {
+  margin-bottom: 0;
+}
+
+.activated-heart {
+  color: red;
+}
+
+.hidden {
+  visibility: hidden;
 }
