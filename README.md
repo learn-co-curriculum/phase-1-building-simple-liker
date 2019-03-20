@@ -39,6 +39,7 @@ Here's the specification:
 * When a user clicks on a full heart
   * Change the heart back to an empty heart
   * Remove the `.activated-heart` class
+* Keep all your styling rules entirely in `style.css`. Do not manipulate any `.style` properties.
 
 Only manipulate the DOM once the server requests respond. Do not make the
 heart full until you're inside a successful `.then` block.
