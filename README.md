@@ -22,24 +22,29 @@ application.
 
 Here's the specification:
 
+* Add the `.hidden` class to the error modal in the HTML so it
+  does not appear when the page first loads
 * When a user clicks on an empty heart ("Recognizing events")
-  * It invokes `mimicServerCall`, which works just like [`fetch()`][fetch].
-    Pass it a `url` (`http://example.com`) and a `configurationObject` and set
-    the `method` to be `POST`, just as you would with [`fetch()`][fetch].
-    * When the server returns a success status
-      * The heart changes to a full-heart icon (DOM Manipulating)
-      * The heart changes its color to red (DOM Manipulating)
+  * Invoke `mimicServerCall` to simulate making a server request
+    * `mimicServerCall` randomly fails to simulate faulty network conditions
     * When the server returns a failure status
-      * Use `document.write` to write `sadness` to the screen (DOM
-        Manipulating)
-* If the status is already liked, clicking the "full heart" again will submit a
-  web request and toggle the DOM back to the "unliked" status.
+      * Respond to the error using a `.catch(() => {})` block after your
+        `.then(() => {})` block.
+      * Display the error modal by removing the `.hidden` class
+      * Display the server error message in the modal
+      * Use `setTimeout` to hide the modal after 5 seconds (add the `.hidden` class)
+    * When the server returns a success status
+      * Change the heart to a full heart
+      * Add the `.activated-heart` class to make the heart appear red
+* When a user clicks on a full heart
+  * Change the heart back to an empty heart
+  * Remove the `.activated-heart` class
+* Keep all your styling rules entirely in `style.css`. Do not manipulate any `.style` properties.
 
-To force `mimicServerCall` to fail, set `forceFail` in the
-`configurationObject` to be `true`.
+Only manipulate the DOM once the server requests respond. Do not make the
+heart full until you're inside a successful `.then` block.
 
 ## Conclusion
-
 That's it! Congratulations. You're now a real-deal web programmer. You can use
 HTML, CSS, and JavaScript to create living, breathing applications. Every web
 application you see or have seen is built on these three pillars, which you're
