@@ -14,7 +14,14 @@ You might not have been sure that you would make it to this point, but you
 have. Right now you should have the information needed to create a basic web
 application!
 
-Your goal is to implement "Simple Liker," from scratch.
+Your goal is to implement "Simple Liker," from scratch. As a reminder, the final product
+should look something like this:
+
+![Screenshot Final](https://curriculum-content.s3.amazonaws.com/fewpjs/fewpjs-build-the-example/finished_product_ss.png)
+
+Keep in mind, the goal here is not to implement a "pixel-perfect" copy doing HTML and CSS. The
+focus is the JavaScript code. Make sure you write good HTML and CSS, but manage your time to put
+the focus on JavaScript.
 
 You might be tempted to look back at previous code, but don't. Use your
 knowledge and documentation from the internet (if needed), to build the
@@ -45,6 +52,7 @@ Only manipulate the DOM once the server requests respond. Do not make the
 heart full until you're inside a successful `.then` block.
 
 ## Conclusion
+
 That's it! Congratulations. You're now a real-deal web programmer. You can use
 HTML, CSS, and JavaScript to create living, breathing applications. Every web
 application you see or have seen is built on these three pillars, which you're
