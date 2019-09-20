@@ -51,6 +51,8 @@ Here's the specification:
 Only manipulate the DOM once the server requests respond. Do not make the
 heart full until you're inside a successful `.then` block.
 
+> Note: The tests will only check for the first part of the specification (adding the `hidden` class). You should verify the rest of the behavior yourself, by checking the page in the browser.
+
 ## Conclusion
 
 That's it! Congratulations. You're now a real-deal front-end developer! You can use
