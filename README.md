@@ -53,9 +53,9 @@ heart full until you're inside a successful `.then` block.
 
 ## Conclusion
 
-That's it! Congratulations. You're now a real-deal web programmer. You can use
-HTML, CSS, and JavaScript to create living, breathing applications. Every web
-application you see or have seen is built on these three pillars, which you're
+That's it! Congratulations. You're now a real-deal front-end developer! You can use
+HTML, CSS, and JavaScript to create living, breathing applications. Every web application 
+front-end you see or have seen is built using these three pillars, which you're
 now skilled with! Give yourself a well-deserved pat on the back!
 
 [fetch]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
