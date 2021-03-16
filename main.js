@@ -23,10 +23,10 @@ function likeCallback(e) {
        heart.style.color = colorStates[heart.style.color];
     })
     .catch(function(error) {
-      // Basic
-      // alert("Something went wrong!");
-      // or....
-      document.getElementById("modal").className = "";
+      const modal = document.getElementById("modal");
+      modal.className = "";
+      modal.innerText = error;
+      setTimeout(() =>  modal.className = "hidden", 3000);
     });
 }
 
