@@ -12,7 +12,7 @@ const colorStates = {
   "": "red"
 };
 
-const articleHearts = document.querySelectorAll(".like");
+const articleHearts = document.querySelectorAll(".like-glyph");
 
 function likeCallback(e) {
   const heart = e.target;
