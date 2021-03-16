@@ -1,4 +1,4 @@
-# Stitching Together the Three Pillars
+# Building the Simple Liker App
 
 ## Learning Goals
 
