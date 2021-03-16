@@ -2,20 +2,20 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-let glyphStates = {
+const glyphStates = {
   "♡": "♥",
   "♥": "♡"
 };
 
-let colorStates = {
+const colorStates = {
   "red" : "",
   "": "red"
 };
 
-let articleHearts = document.querySelectorAll(".like");
+const articleHearts = document.querySelectorAll(".like");
 
 function likeCallback(e) {
-  let heart = e.target;
+  const heart = e.target;
   mimicServerCall("bogusUrl")
    //OR: mimicServerCall("bogusUrl", {forceFailure: true})
     .then(function(serverMessage){
@@ -30,19 +30,19 @@ function likeCallback(e) {
     });
 }
 
-for (let glyph of articleHearts) {
+for (const glyph of articleHearts) {
   glyph.addEventListener("click", likeCallback);
 }
 
 
 //------------------------------------------------------------------------------
-// Ignore after this point. Used only for demo purposes
+// Don't change the code below: this function mocks the server response
 //------------------------------------------------------------------------------
 
 function mimicServerCall(url="http://mimicServer.example.com", config={}) {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
-      let isRandomFailure = Math.random() < .2
+      const isRandomFailure = Math.random() < .2
       if (isRandomFailure) {
         reject("Random server error. Try again.");
       } else {
