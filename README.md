@@ -2,9 +2,9 @@
 
 ## Learning Goals
 
-- Set up an event listener to respond to a user action
-- Submit a request to a mock server
-- Update the DOM based on the mock server's response
+* Set up an event listener to respond to a user action
+* Submit a request to a mocked-up server
+* Update the DOM based on the mock server's response
 
 ## Introduction
 
@@ -50,7 +50,7 @@ Here's the specification:
       `.then(() => {})` block.
     * Display the error modal by removing the `.hidden` class
     * Display the server error message in the modal
-    * Use `setTimeout` to hide the modal after 5 seconds (add the `.hidden` class)
+    * Use `setTimeout` to hide the modal after 3 seconds (add the `.hidden` class)
   * When the "server" returns a success status:
     * Change the heart to a full heart
     * Add the `.activated-heart` class to make the heart appear red
@@ -59,9 +59,8 @@ Here's the specification:
   * Remove the `.activated-heart` class
 * Keep all your styling rules entirely in `style.css`. Do not manipulate any
   `.style` properties.
-
-Only manipulate the DOM once the server request responds. Do not make the heart
-full until you're inside a successful `.then` block.
+* Only manipulate the DOM once the server request responds. Do not make the
+  heart full until you're inside a successful `.then` block.
 
 > Note: The tests will only check for the first part of the specification
 > (adding the `hidden` class). You should verify the rest of the behavior
