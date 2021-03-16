@@ -8,7 +8,7 @@ const FULL_HEART = '♥'
 
 
 //------------------------------------------------------------------------------
-// Ignore after this point. Used only for demo purposes
+// Don't change the code below: this function mocks the server response
 //------------------------------------------------------------------------------
 
 function mimicServerCall(url="http://mimicServer.example.com", config={}) {
