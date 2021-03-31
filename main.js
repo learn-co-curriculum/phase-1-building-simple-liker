@@ -10,10 +10,10 @@ function likeCallback(e) {
     .then(function(){
       if ( heart.innerText === EMPTY_HEART) {
         heart.innerText = FULL_HEART;
-        heart.style.color = "red";
+        heart.className = "activated-heart";
       } else {
         heart.innerText = EMPTY_HEART;
-        heart.style.color = "";
+        heart.className = "";
       }
     })
     .catch(function(error) {
