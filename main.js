@@ -3,9 +3,8 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-
-
-
+const likes = document.querySelector(".hidden")
+likes.addEventListener()
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
