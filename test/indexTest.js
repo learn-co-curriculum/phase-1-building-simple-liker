@@ -1,3 +1,5 @@
+require ( './helpers.js' );
+
 const sinon = require( 'sinon' );
 const helpers = require( './helpers' );
 const chai = require( 'chai' );
